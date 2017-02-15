@@ -8168,7 +8168,7 @@
         a = e(394),
         r = o(a),
         s = function() {
-            var n = [{ class: "iconfont icon-age", title: "年龄", desc: 26 }, { class: "iconfont icon-sex", title: "性别", desc: "男" }, { class: "iconfont icon-education", title: "学历", desc: "本科" }, { class: "iconfont icon-University", title: "毕业院校", desc: "唐山师范学院" }, { class: "iconfont icon-english", title: "英语水平", desc: "CET-4" }, { class: "iconfont icon-coordinate", title: "籍贯", desc: "河北任丘" }, { class: "iconfont icon-experience", title: "工作经验", desc: "2年" }, { class: "iconfont icon-intention", title: "求职意向", desc: "前端开发" }, { class: "iconfont icon-state", title: "状态", desc: "求职中" }];
+            var n = [{ class: "iconfont icon-age", title: "年龄", desc: 25 }, { class: "iconfont icon-sex", title: "性别", desc: "男" }, { class: "iconfont icon-education", title: "学历", desc: "本科" }, { class: "iconfont icon-University", title: "毕业院校", desc: "唐山师范学院" }, { class: "iconfont icon-english", title: "英语水平", desc: "CET-4" }, { class: "iconfont icon-coordinate", title: "籍贯", desc: "河北任丘" }, { class: "iconfont icon-experience", title: "工作经验", desc: "2年" }, { class: "iconfont icon-intention", title: "求职意向", desc: "前端开发" }, { class: "iconfont icon-state", title: "状态", desc: "求职中" }];
             return A.default.createElement("div", { className: "about-container" }, A.default.createElement("h1", { className: "about-title" }, "关于我"), A.default.createElement("div", { className: "about-content" }, n.map(function(n) {
                 return A.default.createElement(r.default, { key: n.class, message: n }) }))) };
     t.default = s }, function(n, t, e) { "use strict";
