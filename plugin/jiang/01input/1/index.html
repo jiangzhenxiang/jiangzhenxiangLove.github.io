@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css" media="all">
+	<link rel="stylesheet" type="text/css" href="../../css/bootstrap-theme.min.css" media="all">
+	<link rel="stylesheet" type="text/css" href="../../css/reset.css" media="all">
+</head>
+<body>
+	<div class="demo1 tc">
+		<input type="text" class="input" value="   [过滤两边的空格]    " id="input">
+		<button id="btn" class="btn btn-primary">过滤</button>
+	</div>
+	<script>
+		;(function(){
+			var input= document.getElementById('input');
+			var btn= document.getElementById('btn');
+			btn.onclick = function(){
+
+				input.value = input.value.replace(/(\s)+/g,'');  //去掉所有空格
+				// input.value = input.value.replace(/(^\s*)|(\s*$)/g,'');  //去掉两边空格
+			};
+		}());
+	</script>
+</body>
+</html>

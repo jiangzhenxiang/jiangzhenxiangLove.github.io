@@ -1,0 +1,10 @@
+.wrap{
+	width: 500px;
+	// font-size: 22px;
+	margin:20px auto;
+	padding: 40px 20px;
+}
+
+.sub-dl{
+	display:none;
+}
