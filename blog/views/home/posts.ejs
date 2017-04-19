@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width,initail-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+	<script src="/js/jquery-1.11.3.min.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
+	<script src="/js/markdown.min.js"></script>
+	<style type="text/css" media="screen">
+		body{
+			background: #eee;
+		}
+		.media-left img {
+		    width: 350px;
+		    height: 180px;
+		}
+		.content{
+			background: #fff;
+		}
+		.main{
+			margin-top: 20px;
+		}
+		.content .media{
+			margin-top: 15px;
+			border-bottom: 1px solid #eee;
+			padding-bottom: 15px;
+		}
+		.sidebar li{
+			line-height: 30px;
+		}
+		footer {
+			background: #222;
+			color: #ccc;
+			margin-top: 15px;
+			padding: 20px 0 10px;
+		}
+
+	</style>
+</head>
+<body>
+	<!-- 导航 -->
+	<nav class="navbar navbar-default navbar-inverse navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<a href="/" class="navbar-brand">大姜的博客</a>
+			</div>
+			<ul class="nav navbar-nav">
+				<li class="active"><a href="#bs" >首页</a></li>
+				
+					<% for(var i = 0;i<cats.length;i++) { %>
+					<li><a href="/list?cats=<%= cats[i].title %>"><%= cats[i].title %></a></li>
+					<% } %>
+			</ul>
+			<!-- 搜索 -->
+			<form action="" class="navbar-form navbar-right">
+				<div class="input-group">
+					<input type="text" class="form-control">
+					<div class="input-group-btn">
+						<button class="btn btn-primary">搜索</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</nav>
+	<!--  -->
+	<div>
+		<img src="/images/baner.jpg" alt=""  class="img-responsive">
+	</div>
+	<!-- 内容 -->
+	<div class="container">
+		<div class="row main">
+			<div class="col-md-9 content">
+				<!-- 面包屑导航 -->
+				<ul class="breadcrumb" style="margin-top: 15px;">
+					<li><a href="">首页</a></li>
+					<li><a href="">HTML</a></li>
+					<li><a href="">H5新特性</a></li>
+				</ul>
+				<div class="page-header">
+					<h1><%= posts.subject %></h1>
+					<p>
+						Killer 发表于(<%= posts.time.toLocaleString() %>) 本文标签： 浏览量：<%= posts.count %>次 
+						<a href=""><i class="glyphicon glyphicon-thumbs-up"></i> 喜欢</a> 
+						<a href=""><i class="glyphicon glyphicon-heart"></i> 收藏</a>
+					</p>
+				</div>
+				<div id="content"><%= posts.content %></div>
+				<script>
+					$("#content").html(markdown.toHTML($("content").html()))
+				</script>
+				<hr>
+				<h3>相关文章</h3>
+				<!--  -->
+				<div class="row">
+					<div class="col-md-6">
+						<ul class="list-unstyled">
+							<li><i class="glyphicon glyphicon-link"></i> <a href="">响应式Web设计</a></li>
+							<li><i class="glyphicon glyphicon-link"></i> <a href="">响应式Web设计</a></li>
+						</ul>
+					</div>
+					<div class="col-md-6">
+						<ul class="list-unstyled">
+							<li><i class="glyphicon glyphicon-link"></i> <a href="">响应式Web设计</a></li>
+							<li><i class="glyphicon glyphicon-link"></i> <a href="">响应式Web设计</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!--  -->
+			<div class="col-md-3 sidebar">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<p>热门文章</p>
+					</div>
+					<div class="panel-body">
+						<ul class="list-unstyled">
+							<li> 
+								<label class="label label-danger">1</label> 
+								<a href="">如何为网站和应用创建设计...</a>
+							</li>
+							<li> 
+								<label class="label label-danger">2</label> 
+								<a href="">如何为网站和应用创建设计...</a>
+							</li>
+							<li> 
+								<label class="label label-danger">3</label> 
+								<a href="">如何为网站和应用创建设计...</a>
+							</li>
+							<li> 
+								<label class="label label-primary">4</label> 
+								<a href="">如何为网站和应用创建设计...</a>
+							</li>
+							<li> 
+								<label class="label label-primary">5</label> 
+								<a href="">如何为网站和应用创建设计...</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 脚部 -->
+	<footer class="text-center">
+		<p>版权所有，保留一切权利！ 转载内容版权归作者及来源网站所有，原创内容转载请注明来源。</p>
+		<p>Copyright © 2016-2017 Joshua, All Rights Reserved.</p>
+	</footer>
+</body>
+</html>
