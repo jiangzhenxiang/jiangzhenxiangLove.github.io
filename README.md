@@ -15,3 +15,6 @@
 
 
 [个人简历](https://jiangzhenxiang.github.io/home "点击链接显示")
+
+
+[2048小游戏](https://jiangzhenxiang.github.io/2048 "点击链接显示")
