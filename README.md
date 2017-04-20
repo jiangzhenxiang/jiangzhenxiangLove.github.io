@@ -1,5 +1,6 @@
 # jiangzhenxiang.github.io
-这是个人前端学习过程中一写总结。
+
+这是个人前端学习过程中一些总结。
 
 
 [饿了么外卖](https://jiangzhenxiang.github.io/eleme "点击链接显示")
@@ -18,3 +19,6 @@
 
 
 [2048小游戏](https://jiangzhenxiang.github.io/2048 "点击链接显示")
+
+
+                                                        by姜振祥
