@@ -21,4 +21,5 @@
 [2048小游戏](https://jiangzhenxiang.github.io/2048 "点击链接显示")
 
 
-                                                        by姜振祥
+***
+_by小姜_
