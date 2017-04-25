@@ -15,9 +15,6 @@
 [常用插件](https://jiangzhenxiang.github.io/plugin "点击链接显示")
 
 
-[个人简历](https://jiangzhenxiang.github.io/home "点击链接显示")（技术栈：react、react-router的单页面（SPA）应用）
-
-
 [2048小游戏](https://jiangzhenxiang.github.io/2048 "点击链接显示")（仅供娱乐）
 
                                                         by姜振祥
