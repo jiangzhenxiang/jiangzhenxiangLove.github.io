@@ -3,11 +3,6 @@
 这是个人前端学习过程中一些总结。
 
 
-[饿了么外卖](https://jiangzhenxiang.github.io/eleme "点击链接显示") （技术栈：Vue2.0、vue-router、vue-cli、webpack、ES6）
-
-
-[美团外卖](https://jiangzhenxiang.github.io/meituan "点击链接显示")（技术栈：Vue2.0、vue-router、axios、vue-cli、webpack、ES6）
-
   
 [博客项目](https://jiangzhenxiang.github.io/blog "点击链接显示")（技术栈：Node、Express、MongoDB、bootstrap）
 
