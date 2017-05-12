@@ -4,6 +4,9 @@
 
 [饿了么外卖](https://jiangzhenxiang.github.io/eleme "点击链接显示") （技术栈：Vue2.0、vue-router、vue-cli、webpack、ES6）
 
+
+[美团外卖](https://jiangzhenxiang.github.io/meituan "点击链接显示") （技术栈：Vue2.0、vue-router、vue-cli、webpack、ES6）
+
  
 [知乎日报](https://jiangzhenxiang.github.io/zhihu "点击链接显示") （技术栈：Vue2.0、vue-router、vuex、vue-cli、webpack、ES6）
 
